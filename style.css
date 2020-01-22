@@ -1,0 +1,71 @@
+
+h1{font-size: 30px;}
+*{
+
+    margin:0px;
+    padding: 0px;
+}
+
+.teamsection{
+    background-color: #f9f9f9;
+    
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 20px 0 50px 0;
+}
+.info{
+    color: #abacae;
+    background-color: white;
+    padding: 20px;
+    width: 270px;
+   flex-wrap: wrap;
+   line-height: 26.5px;
+}
+button{
+    max-width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    border: 0.5px solid transparent;
+    text-align: center;
+    background-color: white;
+    padding-left: 15px;
+}
+.firstteammate,.secondteammate,.thirdteammate,.fourthteammate {
+box-shadow:10px 10px 10px whitesmoke;
+    display:flex;
+    justify-content:start;
+    flex-direction: row;
+height: 200px;
+margin: 10px;
+}
+.firstcolumn{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.secondcolumn{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.members{display: flex;
+  justify-content:center;
+    padding: 10px;
+margin: 10px;
+/* height: 280px; */
+/* color: #abacae; */
+}
+.teammatepic{height: 200px;
+width: 225px;
+margin: 0;
+/* padding: 9px; */
+line-height: 25px;
+}
+.headding{
+    margin: 40px 0 30px 0;
+}
+h2{color: black;}
+#gitcolor{color: black;}
+#linkcolor{color:#6c6c6c}
+a{padding-left: 10px;}
