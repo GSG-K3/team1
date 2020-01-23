@@ -78,15 +78,17 @@ p{
 * {
     margin: 0;
     padding: 0;
-
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    -o-box-sizing: border-box; 
+    -o-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.visibile-xs, .visibile-sm,.visibile-md,.visibile-lg{
+.visibile-xs,
+.visibile-sm,
+.visibile-md,
+.visibile-lg {
     display: none;
 }
 
@@ -231,7 +233,7 @@ a {
 
 .navgition__followUs {
     min-width: 120px;
-    max-width: 252px;
+    max-width: 320px;
     width: 30%;
 }
 
@@ -263,14 +265,128 @@ a {
 }
 
 
+/*================================================ roba ==================================*/
+
+h1 {
+    font-size: 30px;
+}
+
+.teamsection {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 50px 0;
+}
+
+.info {
+    color: #abacae;
+    background-color: white;
+    padding: 20px;
+    width: 370px;
+    flex-wrap: wrap;
+    line-height: 26.5px;
+}
+
+.firstteammate,
+.secondteammate,
+.thirdteammate,
+.fourthteammate {
+    box-shadow: 10px 10px 10px whitesmoke;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    height: 200px;
+    margin: 21px;
+}
+
+.firstcolumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondcolumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    /* padding: 10px;
+    margin: 10px; */
+    /* height: 280px; */
+    /* color: #abacae; */
+}
+
+.teammatepic {
+    height: 200px;
+    width: 225px;
+    margin: 0;
+    /* padding: 9px; */
+    line-height: 25px;
+}
+
+.headding {
+    margin: 40px 0 30px 0;
+}
+
+h2 {
+    color: black;
+}
+
+#gitcolor {
+    color: black;
+}
+
+#linkcolor {
+    color: #6c6c6c
+}
+
+a {
+    padding-left: 10px;
+}
+
+.icons {
+    padding-top: 40px;
+}
+
+
+/*================================================ roba =======================================*/
+
+
 /*============================= media ==============================*/
 
-
-
+<<<<<<< HEAD
 @media(max-width:576px) and (max-width: 768px) { /* Modile */
     .container {
         
         max-width: 540px;
+=======
+@media(max-width:340px) {
+    /* Modile */
+    .container {
+        max-width: 340px;
+    }
+    .members {
+        flex-direction: column;
+    }
+    .icons {
+        padding-top: 0px;
+    }
+    .teammatepic {
+        height: 100px;
+        width: 125px;
+        margin: 0;
+        /* padding: 9px; */
+        line-height: 5px;
+    }
+    .info {
+        line-height: 17.5px;
+        padding: 10px;
+>>>>>>> master
     }
     h1{
         font-size: 20px;
@@ -303,6 +419,14 @@ a {
         flex-wrap: wrap;
         height: 25px;
     }
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
     .message{
         margin-top: 0;
         width: 200px;
@@ -371,20 +495,71 @@ a {
 }
 
 @media(min-width: 768px) and  (max-width :992px){ /* Small */
+@media (min-width:340px)and (max-width:576px) {
+    .teammatepic {
+        height: 100px;
+        width: 125px;
+        margin: 0;
+        /* padding: 9px; */
+        line-height: 5px;
+    }
+    /* Modile */
+    .container {
+        max-width: 340px;
+    }
+    .members {
+        flex-direction: column;
+    }
+    .icons {
+        padding-top: 0px;
+    }
+    .info {
+        line-height: 19.5px;
+        padding: 15px;
+    }
+}
+
+@media(min-width: 577px) and (max-width :768px) {
+    /*Small */
+    .container {
+        max-width: 540px;
+    }
+    .members {
+        flex-direction: column;
+    }
+    .info {
+        width: 570px;
+    }
+    .icons {
+        padding-top: 0px;
+    }
+}
+
+@media(min-width: 769px) and (max-width :992px) {
+    /*Small */
     .container {
         max-width: 720px;
     }
-}
-
-
-@media(min-width :992px) { /* medium */
-    .container {
-        max-width: 960px;
+    .members {
+        flex-direction: column;
+    }
+    .info {
+        width: 570px;
     }
 }
 
+@media(min-width :993px) and (max-width :1200px) {
+    /* medium */
+    .container {
+        max-width: 960px;
+    }
+    .info {
+        width: 200px;
+    }
+}
 
-@media(min-width :1200px) { /* large*/
+@media(min-width :1201px) {
+    /* large*/
     .container {
         max-width: 1140px;
     }
