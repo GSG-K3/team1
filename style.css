@@ -2,16 +2,50 @@
 * {
     margin: 0;
     padding: 0;
-
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    -o-box-sizing: border-box; 
+    -o-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.visibile-xs, .visibile-sm,.visibile-md,.visibile-lg{
-    display: none;
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font: 700 48px/56px "Raleway", sans-serif;
+    color: #626262;
+}
+
+.p-large {
+    font: 400 16px/24px "Raleway", sans-serif;
+}
+
+.bnt-lg {
+    display: inline-block;
+    padding: 22px 42px;
+    border-radius: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn-blue {
+    background-color: #00bfd8;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.mainDiv {
+    padding: 87px 0 0 0;
 }
 
 a {
@@ -57,6 +91,11 @@ a {
     align-items: center;
 }
 
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 .row {
     position: relative;
     display: -ms-flexbox;
@@ -94,17 +133,12 @@ a {
     transition: all 0.3s ease-out 0s;
 }
 
-.navgition__logo {
+
+/* .navgition__logo {
     min-width: 60px;
     max-width: 120px;
     width: 10%;
-}
-
-.navgition__nav {
-    min-width: 250px;
-    max-width: 550px;
-    width: 65%;
-}
+} */
 
 .navgition__nav ul li {
     margin: 0 10px;
@@ -153,11 +187,12 @@ a {
     opacity: 1;
 }
 
-.navgition__followUs {
+
+/* .navgition__followUs {
     min-width: 120px;
-    max-width: 252px;
+    max-width: 310px;
     width: 30%;
-}
+} */
 
 .navgition__followUs span {
     font-size: 16px;
@@ -187,34 +222,86 @@ a {
 }
 
 
+/*=============== custom Meadi Query of Heaber */
+
+@media(min-width: 576px) {
+    /* and (max-width:992)*/
+    .navgition__followUs {
+        display: none !important;
+    }
+}
+
+
+/*============================================ home  =============================================*/
+
+.home {
+    background: url(image/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.TeamDescrition__Title {
+    color: #00bfd8;
+}
+
+.TeamDescrition__Descr {
+    font-size: 32px;
+}
+
+.home .p-large {
+    margin-bottom: 24px;
+    color: #626262;
+}
+
+
 /*============================= media ==============================*/
 
+@media(max-width:576px) {
+    /* Modile */
+    .container {
+        max-width: 340px;
+    }
+    .navgition__followUs,
+    .navgition__logo {
+        display: none !important;
+    }
+}
 
-
-@media(max-width:576px) { /* Modile */
+@media(min-width: 576px) and (max-width:768) {
+    /* Small */
     .container {
         max-width: 540px;
     }
+    .navgition__followUs {
+        display: none !important;
+    }
 }
 
-
-
-@media(min-width: 768px) { /* Small */
+@media(min-width: 768px) and (max-width:991) {
+    /* Small */
     .container {
         max-width: 720px;
     }
-}
-
-
-@media(min-width :992px) { /* medium */
-    .container {
-        max-width: 960px;
+    .navgition__followUs {
+        display: flex !important;
     }
 }
 
+@media(min-width :992px) and (max-width:1199) {
+    /* medium */
+    .container {
+        max-width: 960px;
+    }
+    .navgition__followUs {
+        display: flex !important;
+    }
+}
 
-@media(min-width :1200px) { /* large*/
+@media(min-width :1200px) {
+    /* large*/
     .container {
         max-width: 1140px;
+    }
+    .navgition__followUs {
+        display: flex !important;
     }
 }
