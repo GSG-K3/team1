@@ -135,9 +135,9 @@ a {
 
 
 /* .navgition__logo {
-    min-width: 60px;
-    max-width: 120px;
-    width: 10%;
+min-width: 60px;
+max-width: 120px;
+width: 10%;
 } */
 
 .navgition__nav ul li {
@@ -189,9 +189,13 @@ a {
 
 
 /* .navgition__followUs {
-    min-width: 120px;
-    max-width: 310px;
-    width: 30%;
+min-width: 120px;
+
+max-width: 310px;
+=======
+max-width: 320px;
+>>>>>>> dcea35e2e1c15758c4eacc4970c4a2afa3ef922b
+width: 30%;
 } */
 
 .navgition__followUs span {
@@ -224,12 +228,107 @@ a {
 
 /*=============== custom Meadi Query of Heaber */
 
+
+/*================================================ roba ==================================*/
+
+h1 {
+    font-size: 30px;
+}
+
+.teamsection {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 50px 0;
+}
+
+.info {
+    color: #abacae;
+    background-color: white;
+    padding: 20px;
+    width: 370px;
+    flex-wrap: wrap;
+    line-height: 26.5px;
+}
+
+.firstteammate,
+.secondteammate,
+.thirdteammate,
+.fourthteammate {
+    box-shadow: 10px 10px 10px whitesmoke;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    height: 200px;
+    margin: 21px;
+}
+
+.firstcolumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondcolumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    /* padding: 10px;
+margin: 10px; */
+    /* height: 280px; */
+    /* color: #abacae; */
+}
+
+.teammatepic {
+    height: 200px;
+    width: 225px;
+    margin: 0;
+    /* padding: 9px; */
+    line-height: 25px;
+}
+
+.headding {
+    margin: 40px 0 30px 0;
+}
+
+h2 {
+    color: black;
+}
+
+#gitcolor {
+    color: black;
+}
+
+#linkcolor {
+    color: #6c6c6c
+}
+
+a {
+    padding-left: 10px;
+}
+
+.icons {
+    padding-top: 40px;
+}
+
+
+/*================================================ roba =======================================*/
+
 @media(min-width: 576px) {
     /* and (max-width:992)*/
     .navgition__followUs {
         display: none !important;
     }
 }
+
+
+/*============================= media ==============================*/
 
 
 /*============================================ home  =============================================*/
@@ -256,52 +355,122 @@ a {
 /*============================= media ==============================*/
 
 @media(max-width:576px) {
-    /* Modile */
-    .container {
-        max-width: 340px;
+    @media(max-width: 340px) {
+        /* Modile */
+        .container {
+            max-width: 340px;
+        }
+        .navgition__followUs,
+        .navgition__logo {
+            display: none !important;
+        }
     }
-    .navgition__followUs,
-    .navgition__logo {
-        display: none !important;
+    @media(min-width: 576px) and (max-width:768) {
+        /* Small */
+        .container {
+            max-width: 540px;
+        }
+        .navgition__followUs {
+            display: none !important;
+        }
     }
-}
-
-@media(min-width: 576px) and (max-width:768) {
-    /* Small */
-    .container {
-        max-width: 540px;
+    @media(min-width: 768px) and (max-width:991) {
+        /* Small */
+        .container {
+            max-width: 720px;
+        }
+        .navgition__followUs {
+            display: flex !important;
+        }
     }
-    .navgition__followUs {
-        display: none !important;
+    @media(min-width :992px) and (max-width:1199) {
+        .members {
+            flex-direction: column;
+        }
+        .icons {
+            padding-top: 0px;
+        }
+        .teammatepic {
+            height: 100px;
+            width: 125px;
+            margin: 0;
+            /* padding: 9px; */
+            line-height: 5px;
+        }
+        .info {
+            line-height: 17.5px;
+            padding: 10px;
+        }
     }
-}
-
-@media(min-width: 768px) and (max-width:991) {
-    /* Small */
-    .container {
-        max-width: 720px;
+    @media (min-width:340px)and (max-width:576px) {
+        .teammatepic {
+            height: 100px;
+            width: 125px;
+            margin: 0;
+            /* padding: 9px; */
+            line-height: 5px;
+        }
+        /* Modile */
+        .container {
+            max-width: 340px;
+        }
+        .members {
+            flex-direction: column;
+        }
+        .icons {
+            padding-top: 0px;
+        }
+        .info {
+            line-height: 19.5px;
+            padding: 15px;
+        }
     }
-    .navgition__followUs {
-        display: flex !important;
+    @media(min-width: 577px) and (max-width :768px) {
+        /*Small */
+        .container {
+            max-width: 540px;
+        }
+        .members {
+            flex-direction: column;
+        }
+        .info {
+            width: 570px;
+        }
+        .icons {
+            padding-top: 0px;
+        }
     }
-}
-
-@media(min-width :992px) and (max-width:1199) {
-    /* medium */
-    .container {
-        max-width: 960px;
+    @media(min-width: 769px) and (max-width :992px) {
+        /*Small */
+        .container {
+            max-width: 720px;
+        }
+        .members {
+            flex-direction: column;
+        }
+        .info {
+            width: 570px;
+        }
     }
-    .navgition__followUs {
-        display: flex !important;
+    @media(min-width :993px) and (max-width :1200px) {
+        /* medium */
+        .container {
+            max-width: 960px;
+        }
+        .navgition__followUs {
+            display: flex !important;
+        }
     }
-}
-
-@media(min-width :1200px) {
-    /* large*/
-    .container {
-        max-width: 1140px;
+    @media(min-width :1200px) {
+        =======.info {
+            width: 200px;
+        }
     }
-    .navgition__followUs {
+    @media(min-width :1201px) {
+        /* large*/
+        .container {
+            max-width: 1140px;
+        }
         display: flex !important;
     }
 }
