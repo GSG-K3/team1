@@ -28,8 +28,7 @@
     
 }
 .con__par {
-    font-family: monospace;
-    color: gray;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     width: 450px;
     align-self: flex-start;
@@ -37,20 +36,291 @@
     padding-right: 20px;
     flex-basis: 10em;
     text-align: justify ;
+    color: gray;
 }
 .con__img{
     height: 550px;
     width: 200px;
     box-sizing: border-box;
-    flex-basis: 31em;
-   
+    flex-basis: 31em; 
+    
 }
-@media (max-width: 200px) {
-   .con {
-    flex-direction: column;
-   }
-   .con__img {
-     padding-top: 20px;
-   }
+/* @media (max-width: 360px){
+    
+}
+
+@media (max-width: 800px) {
+   
+} */
+@media(max-width:576px) {
+    /* Modile */
+    .container {
+        max-width: 340px;
+    }
+    .con{
+        margin: 4px 0px 0px;
+        padding: 15px 0px 0px;
+    }
+    .con__par{
+        width: 323px;
+        padding-left: 6px;
+        padding-right: 17px;
+    }
+    .con__h1{
+        padding-left: 30px;
+    }
+    .con__img{
+        flex-basis: 20em;
+        padding-top: 40px;
+    }
+}
+
+@media(min-width: 577px) and (max-width:767) {
+    /* Small */
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) and (max-width:991) {
+    /* Small */
+    .container {
+        max-width: 720px;
+    }
+    .con {
+        flex-direction: column;
+       }
+       .con__img {
+         padding-top: 20px;
+         padding-left: 50px;
+         width: 450px;
+       }
+       .con__par {
+         flex-basis: 6em;
+         padding-left: 10px;
+         padding-right: 10px;
+       }
+    
+}
+
+@media(min-width :992px) and (max-width:1199) {
+    /* medium */
+    .container {
+        max-width: 960px;
+    }
+    .con {
+        flex-direction: column;
+       }
+       .con__img {
+         padding-top: 20px;
+         padding-left: 50px;
+         width: 450px;
+       }
+       .con__par {
+         flex-basis: 6em;
+         padding-left: 10px;
+         padding-right: 10px;
+       }
+    
+}
+
+@media(min-width :1200px) {
+    /* large*/
+    .container {
+        max-width: 1140px;
+    }
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>bayan<<<<<<<<<<<<<<<<<<<<<<<<<<<<,*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css);
+* {
+    margin: 0;
+    padding: 0;
+
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.visibile-xs, .visibile-sm,.visibile-md,.visibile-lg{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-items-center {
+    justify-items: center
+}
+
+.justify-items-flex-end {
+    justify-items: flex-end
+}
+
+.justify-items-flex-start {
+    justify-items: flex-start
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.row {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 6px 3px;
+    flex-grow: 1;
+}
+
+
+/*============================ navgition ======================================*/
+
+.navgition {
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    position: fixed;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navgition__logo {
+    min-width: 60px;
+    max-width: 120px;
+    width: 10%;
+}
+
+.navgition__nav {
+    min-width: 250px;
+    max-width: 550px;
+    width: 65%;
+}
+
+.navgition__nav ul li {
+    margin: 0 10px;
+}
+
+.navgition__nav ul li a {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 700;
+    padding: 26px 0;
+    color: #121212;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navgition__nav ul li>a::before {
+    position: absolute;
+    content: ' ';
+    width: 8px;
+    height: 4px;
+    background-color: #0067f4;
+    left: 50%;
+    margin: 0 2px;
+    bottom: 14px;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.navgition__nav ul li>a::after {
+    position: absolute;
+    content: ' ';
+    width: 8px;
+    height: 4px;
+    background-color: #0067f4;
+    left: auto;
+    right: 50%;
+    margin: 0 2px;
+    bottom: 14px;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.navgition__nav ul li:hover>a::before,
+.navgition__nav ul li:hover>a::after {
+    opacity: 1;
+}
+
+.navgition__followUs {
+    min-width: 120px;
+    max-width: 252px;
+    width: 30%;
+}
+
+.navgition__followUs span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6c6c6c;
+    line-height: 35px;
+    margin: 0 15px 0 0;
+}
+
+.navgition__followUs ul li>a {
+    font-size: 32px;
+    color: #6c6c6c;
+    margin: 0 5px 0 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navgition ul {
+    list-style: none;
+}
+
+.navgition ul li {
+    display: inline-block;
+}
+
+
+/*============================= media ==============================*/
+
+
+
