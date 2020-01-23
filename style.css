@@ -1,3 +1,136 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>bayan<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.con{
+     margin: 30px 30px 30px;
+     padding: 20px 20px 20px; 
+    border: #00bfd8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+    
+}
+
+.con__h1{
+    font-size: 50px;
+    color:  #00bfd8;
+    font-family: monospace;
+    font-weight: 400;
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    
+}
+.con__par {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: 450px;
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-basis: 10em;
+    text-align: justify ;
+    color: gray;
+}
+.con__img{
+    height: 550px;
+    width: 200px;
+    box-sizing: border-box;
+    flex-basis: 31em; 
+    
+}
+/* @media (max-width: 360px){
+    
+}
+
+@media (max-width: 800px) {
+   
+} */
+@media(max-width:576px) {
+    /* Modile */
+    .container {
+        max-width: 340px;
+    }
+    .con{
+        margin: 4px 0px 0px;
+        padding: 15px 0px 0px;
+    }
+    .con__par{
+        width: 323px;
+        padding-left: 6px;
+        padding-right: 17px;
+    }
+    .con__h1{
+        padding-left: 30px;
+    }
+    .con__img{
+        flex-basis: 20em;
+        padding-top: 40px;
+    }
+}
+
+@media(min-width: 577px) and (max-width:767) {
+    /* Small */
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) and (max-width:991) {
+    /* Small */
+    .container {
+        max-width: 720px;
+    }
+    .con {
+        flex-direction: column;
+       }
+       .con__img {
+         padding-top: 20px;
+         padding-left: 50px;
+         width: 450px;
+       }
+       .con__par {
+         flex-basis: 6em;
+         padding-left: 10px;
+         padding-right: 10px;
+       }
+    
+}
+
+@media(min-width :992px) and (max-width:1199) {
+    /* medium */
+    .container {
+        max-width: 960px;
+    }
+    .con {
+        flex-direction: column;
+       }
+       .con__img {
+         padding-top: 20px;
+         padding-left: 50px;
+         width: 450px;
+       }
+       .con__par {
+         flex-basis: 6em;
+         padding-left: 10px;
+         padding-right: 10px;
+       }
+    
+}
+
+@media(min-width :1200px) {
+    /* large*/
+    .container {
+        max-width: 1140px;
+    }
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>bayan<<<<<<<<<<<<<<<<<<<<<<<<<<<<,*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css);
 * {
     margin: 0;
@@ -283,96 +416,3 @@ a {
 
 /*============================= media ==============================*/
 
-@media(max-width:340px) {
-    /* Modile */
-    .container {
-        max-width: 340px;
-    }
-    .members {
-        flex-direction: column;
-    }
-    .icons {
-        padding-top: 0px;
-    }
-    .teammatepic {
-        height: 100px;
-        width: 125px;
-        margin: 0;
-        /* padding: 9px; */
-        line-height: 5px;
-    }
-    .info {
-        line-height: 17.5px;
-        padding: 10px;
-    }
-}
-
-@media (min-width:340px)and (max-width:576px) {
-    .teammatepic {
-        height: 100px;
-        width: 125px;
-        margin: 0;
-        /* padding: 9px; */
-        line-height: 5px;
-    }
-    /* Modile */
-    .container {
-        max-width: 340px;
-    }
-    .members {
-        flex-direction: column;
-    }
-    .icons {
-        padding-top: 0px;
-    }
-    .info {
-        line-height: 19.5px;
-        padding: 15px;
-    }
-}
-
-@media(min-width: 577px) and (max-width :768px) {
-    /*Small */
-    .container {
-        max-width: 540px;
-    }
-    .members {
-        flex-direction: column;
-    }
-    .info {
-        width: 570px;
-    }
-    .icons {
-        padding-top: 0px;
-    }
-}
-
-@media(min-width: 769px) and (max-width :992px) {
-    /*Small */
-    .container {
-        max-width: 720px;
-    }
-    .members {
-        flex-direction: column;
-    }
-    .info {
-        width: 570px;
-    }
-}
-
-@media(min-width :993px) and (max-width :1200px) {
-    /* medium */
-    .container {
-        max-width: 960px;
-    }
-    .info {
-        width: 200px;
-    }
-}
-
-@media(min-width :1201px) {
-    /* large*/
-    .container {
-        max-width: 1140px;
-    }
-}
