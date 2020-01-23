@@ -1,28 +1,206 @@
-
-h1{font-size: 30px;}
-*{
-
-    margin:0px;
-    padding: 0px;
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.teamsection{
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-items-center {
+    justify-items: center
+}
+
+.justify-items-flex-end {
+    justify-items: flex-end
+}
+
+.justify-items-flex-start {
+    justify-items: flex-start
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.row {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 6px 3px;
+    flex-grow: 1;
+}
+
+
+/*============================ navgition ======================================*/
+
+.navgition {
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    position: fixed;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navgition__logo {
+    min-width: 60px;
+    max-width: 120px;
+    width: 10%;
+}
+
+.navgition__nav {
+    min-width: 250px;
+    max-width: 550px;
+    width: 65%;
+}
+
+.navgition__nav ul li {
+    margin: 0 10px;
+}
+
+.navgition__nav ul li a {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 700;
+    padding: 26px 0;
+    color: #121212;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navgition__nav ul li>a::before {
+    position: absolute;
+    content: ' ';
+    width: 8px;
+    height: 4px;
+    background-color: #0067f4;
+    left: 50%;
+    margin: 0 2px;
+    bottom: 14px;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.navgition__nav ul li>a::after {
+    position: absolute;
+    content: ' ';
+    width: 8px;
+    height: 4px;
+    background-color: #0067f4;
+    left: auto;
+    right: 50%;
+    margin: 0 2px;
+    bottom: 14px;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+
+.navgition__nav ul li:hover>a::before,
+.navgition__nav ul li:hover>a::after {
+    opacity: 1;
+}
+
+.navgition__followUs {
+    min-width: 120px;
+    max-width: 252px;
+    width: 30%;
+}
+
+.navgition__followUs span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6c6c6c;
+    line-height: 35px;
+    margin: 0 15px 0 0;
+}
+
+.navgition__followUs ul li>a {
+    font-size: 32px;
+    color: #6c6c6c;
+    margin: 0 5px 0 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.navgition ul {
+    list-style: none;
+}
+
+.navgition ul li {
+    display: inline-block;
+}
+
+
+/*================================================ roba ==================================*/
+
+h1 {
+    font-size: 30px;
+}
+
+.teamsection {
     background-color: #f9f9f9;
-    
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 20px 0 50px 0;
 }
-.info{
+
+.info {
     color: #abacae;
     background-color: white;
     padding: 20px;
     width: 270px;
-   flex-wrap: wrap;
-   line-height: 26.5px;
+    flex-wrap: wrap;
+    line-height: 26.5px;
 }
-button{
+
+button {
     max-width: 150px;
     height: 30px;
     border-radius: 30px;
@@ -31,41 +209,94 @@ button{
     background-color: white;
     padding-left: 15px;
 }
-.firstteammate,.secondteammate,.thirdteammate,.fourthteammate {
-box-shadow:10px 10px 10px whitesmoke;
-    display:flex;
-    justify-content:start;
+
+.firstteammate,
+.secondteammate,
+.thirdteammate,
+.fourthteammate {
+    box-shadow: 10px 10px 10px whitesmoke;
+    display: flex;
+    justify-content: start;
     flex-direction: row;
-height: 200px;
-margin: 10px;
+    height: 200px;
+    margin: 10px;
 }
-.firstcolumn{
-    display:flex;
-    justify-content:center;
+
+.firstcolumn {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
-.secondcolumn{
-    display:flex;
-    justify-content:center;
+
+.secondcolumn {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
-.members{display: flex;
-  justify-content:center;
+
+.members {
+    display: flex;
+    justify-content: center;
     padding: 10px;
-margin: 10px;
-/* height: 280px; */
-/* color: #abacae; */
+    margin: 10px;
+    /* height: 280px; */
+    /* color: #abacae; */
 }
-.teammatepic{height: 200px;
-width: 225px;
-margin: 0;
-/* padding: 9px; */
-line-height: 25px;
+
+.teammatepic {
+    height: 200px;
+    width: 225px;
+    margin: 0;
+    /* padding: 9px; */
+    line-height: 25px;
 }
-.headding{
+
+.headding {
     margin: 40px 0 30px 0;
 }
-h2{color: black;}
-#gitcolor{color: black;}
-#linkcolor{color:#6c6c6c}
-a{padding-left: 10px;}
+
+h2 {
+    color: black;
+}
+
+#gitcolor {
+    color: black;
+}
+
+#linkcolor {
+    color: #6c6c6c
+}
+
+a {
+    padding-left: 10px;
+}
+
+
+/*================================================ roba =======================================*/
+
+
+/*============================= media ==============================*/
+
+@media(min-width :1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media(max-width :992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(max-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
