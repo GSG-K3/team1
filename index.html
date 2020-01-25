@@ -1,66 +1,16 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="./style.css"> 
-    </head>
-    <body>
-        <header>
-            <div class="navgition">
-    
-                <div class="container">
-    
-    
-                    <div class="row">
-                        <div class="navgition__logo ">
-                            <a>
-                                <img src="image/logo.svg" alt="Ocean Team">
-                            </a>
-    
-    
-                        </div>
-                        <div class="navgition__nav display-flex align-items-center justify-content-center ">
-    
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="navgition__followUs display-flex">
-                            <span>FOLLOW US</span>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-       
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/c228b3c45c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
     <title>Ocean Team</title>
 </head>
 
 <body>
-
-    <header>
+    <header id="header">
         <div class="navgition">
 
             <div class="container">
@@ -77,14 +27,14 @@
                     <div class="navgition__nav display-flex align-items-center justify-content-center ">
 
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#Team">Team</a></li>
+                            <li><a href="#About-us">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="navgition__followUs display-flex">
-                        <span>FOLLOW US</span>
+                        <!-- <span>FOLLOW US</span> -->
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
@@ -95,48 +45,57 @@
                 </div>
             </div>
         </div>
+
     </header>
-    <section class = "con">
-        <div>
-           <h1 class="con__h1" > ABOUT US </h1>
-           <p class="con__par">
-               Our Website Development Company 
-               can transform your ideas in life and 
-               empower your business with the smart solution within your 
-               needs, budget, and timeframe 
-               With our business and tech experience, 
-               we individualize approach to every product, 
-               care about smooth communication with all our clients,
-               and a fully transparent process of the project development.
-               Bringing cutting-edge technologies to the market, we work
-               with innovators from across 
-               the globe as statups , agencies, enterprises.
-           </p>
-        </div>
-   
-             <div class = "con__img" >
-               <img src="image/office-worker.svg" alt="">
-             </div>
-       </section>
 
-    <section class="teamsection">
-        <div class="container">
-            <div class="headding">
-                <h1>Meet our team</h1>
+    <div class="mainDiv">
+
+        <!--Home-->
+        <section id="Home" class="home">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-6 TeamDescrtion">
+                        <h1>
+                            <span class="TeamDescrition__Title">
+                                Ocean Team
+                            </span> <br />
+                            <span class="TeamDescrition__Descr">Develop Smart Solution technology</span>
+                        </h1>
+                        <p class="p-large">
+                            Our Team using best technology to a compilation your solution
+                        </p>
+
+                        <a class="bnt-lg btn-blue" href="#Team">DISCOVER</a>
+                    </div>
+
+
+                    <div class="col-6">
+
+                        <div class="home__Image">
+                            <img class="img-fluid" src="image/header-teamwork.svg" alt="alternative">
+                        </div>
+
+                    </div>
+                </div>
+
+
+
             </div>
-            <div class="members">
 
-        <section class="teamsection">
+        </section>
+        <section class="teamsection" id="Team">
             <div class="container">
                 <div class="headding">
                     <h1>Meet our team</h1>
                 </div>
                 <div class="members">
-    
+
                     <div class="firstcolumn">
                         <div class="firstteammate">
                             <div>
-                                <img class="teammatepic" src="file:///home/ruba/single%20page/fusion-opl/fusion-opl/assets/img/team/team-03.png" alt="whatever">
+                                <img class="teammatepic" src="image/team/team-03.png" alt="whatever">
                             </div>
                             <div class="info">
                                 <h2> Ian</h2>
@@ -147,16 +106,16 @@
                                     <a id="gitcolor" href="#"> <i class="fab fa-github"></i></a>
                                     <a id="linkcolor" href="#"> <i class="fab fa-linkedin-in"></i></a>
                                 </div>
-    
+
                             </div>
-    
-    
+
+
                         </div>
-    
-    
+
+
                         <div class="secondteammate">
                             <div>
-                                <img class="teammatepic" src="file:///home/ruba/single%20page/fusion-opl/fusion-opl/assets/img/team/team-04.png" alt="whatever">
+                                <img class="teammatepic" src="image/team/team-04.png" alt="whatever">
                             </div>
                             <div class="info">
                                 <h2> Hanan</h2>
@@ -173,7 +132,7 @@
                     <div class="secondcolumn">
                         <div class="thirdteammate">
                             <div>
-                                <img class="teammatepic" src="file:///home/ruba/single%20page/fusion-opl/fusion-opl/assets/img/team/team-02.png" alt="whatever">
+                                <img class="teammatepic" src="image/team/team-02.png" alt="whatever">
                             </div>
                             <div class="info">
                                 <h2> Bayan</h2>
@@ -186,13 +145,13 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="fourthteammate">
                             <div>
-                                <img class="teammatepic" src="file:///home/ruba/single%20page/fusion-opl/fusion-opl/assets/img/team/team-01.png" alt="whatever">
+                                <img class="teammatepic" src="image/team/team-01.png" alt="whatever">
                             </div>
                             <div class="info">
-                                <h2> Yakoob</h2>
+                                <h2> Jake </h2>
                                 <p>lead designer</p>
                                 <p> whatever orem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetu</p>
                                 <div class="icons">
@@ -200,7 +159,7 @@
                                     <a id="gitcolor" font href="#"> <i class="fab fa-github"></i></a>
                                     <a id="linkcolor" href="#"> <i class="fab fa-linkedin-in"></i></a>
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
@@ -208,22 +167,55 @@
             </div>
         </section>
 
-        <section class="contactUs">
-            <h1>CONTACT US</h1>
-            <p>If you have any questions please fell free to contact us.</p>
-            <div class="inputs">
-                <form  action="/action_page.php">
-                    <div class="userInfo">
-                        <input type="text"  placeholder="Name" class="info"> 
-                        <input type="text"  placeholder="Email" class="info"> 
+        <section id="About-us">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h1 class="con__h1"> ABOUT US </h1>
+                        <p class="con__par">
+                            Our Website Development Company can transform your ideas in life and empower your business with the smart solution within your needs, budget, and timeframe With our business and tech experience, we individualize approach to every product, care about smooth
+                            communication with all our clients, and a fully transparent process of the project development. Bringing cutting-edge technologies to the market, we work with innovators from across the globe as statups , agencies, enterprises.
+                        </p>
                     </div>
-                    <input type="text" class="subject" placeholder="Subject">
-                    <br>
-                    <textarea class="message" placeholder="Your Message"></textarea>
-                </form>
-            </div>
-            <button class="bnt-lg btn-blue">SEND MESSAGE</button>
-        </section>
-    </body>
-    </html>
 
+                    <div class="con__img">
+                        <img src="image/office-worker.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+
+            <div class="container">
+                <div class="row flex-direction-column">
+                    <header class="contact__contint">
+                        <h1 class="contact_title">CONTACT US</h1>
+                        <p class="contact__Descr">If you have any questions please fell free to contact us.</p>
+                    </header>
+                    <footer class="inputs">
+                        <form action="/action_page.php">
+                            <div class="userInfo">
+                                <input type="text" placeholder="Name" class="info">
+                                <input type="text" placeholder="Email" class="info">
+                            </div>
+                            <input type="text" class="subject" placeholder="Subject">
+                            <br>
+                            <textarea class="message" placeholder="Your Message"></textarea>
+                        </form>
+                    </footer>
+                    <a class="bnt-lg btn-blue">SEND MESSAGE</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,213 +1,5 @@
-h1{
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    margin:20px;
-    color: #00bfd8;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-p{
-    font-family: 'Times New Roman', Times, serif;
-    justify-content: center;
-    font-size: 20px;
-    margin-bottom:50px;
-}
-
-.contactUs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 380px;
-    width: 520px;
-    margin: 0px;
-}
-
-.userInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top:10px;
-    margin-bottom:5px;
-    width: 520px;
-    
- }
-
- .userInfo > input{
-    width: 255px;
-    height: 40px;
-    border: 1px solid rgb(47, 67, 241);
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: 2px 2px 2px rgb(170, 177, 243);
- }
-
- .subject{
-    position: relative;
-    height: 40px;
-    width: 520px;
-    margin:5px 0px 5px 0px;
-    border: 1px solid rgb(47, 67, 241);
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: 2px 2px 2px rgb(170, 177, 243);
-}
-
-.message{
-    position: relative;
-    height: 200px;
-    width: 520px;
-    margin:5px 0px 5px 0px;
-    border: 1px solid rgb(47, 67, 241);
-    box-shadow: 2px 2px 2px rgb(170, 177, 243);
-    border-radius: 4px;
-    padding: 5px;
-}
-
-
-
-
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>bayan<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-
-.con{
-     margin: 30px 30px 30px;
-     padding: 20px 20px 20px; 
-    border: #00bfd8;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-   
-    
-}
-
-.con__h1{
-    font-size: 50px;
-    color:  #00bfd8;
-    font-family: monospace;
-    font-weight: 400;
-    align-self: flex-start;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    
-}
-.con__par {
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    width: 450px;
-    align-self: flex-start;
-    padding-left: 50px;
-    padding-right: 20px;
-    flex-basis: 10em;
-    text-align: justify ;
-    color: gray;
-}
-.con__img{
-    height: 550px;
-    width: 200px;
-    box-sizing: border-box;
-    flex-basis: 31em; 
-    
-}
-/* @media (max-width: 360px){
-    
-}
-
-@media (max-width: 800px) {
-   
-} */
-@media(max-width:576px) {
-    /* Modile */
-    .container {
-        max-width: 340px;
-    }
-    .con{
-        margin: 4px 0px 0px;
-        padding: 15px 0px 0px;
-    }
-    .con__par{
-        width: 323px;
-        padding-left: 6px;
-        padding-right: 17px;
-    }
-    .con__h1{
-        padding-left: 30px;
-    }
-    .con__img{
-        flex-basis: 20em;
-        padding-top: 40px;
-    }
-}
-
-@media(min-width: 577px) and (max-width:767) {
-    /* Small */
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media(min-width: 768px) and (max-width:991) {
-    /* Small */
-    .container {
-        max-width: 720px;
-    }
-    .con {
-        flex-direction: column;
-       }
-       .con__img {
-         padding-top: 20px;
-         padding-left: 50px;
-         width: 450px;
-       }
-       .con__par {
-         flex-basis: 6em;
-         padding-left: 10px;
-         padding-right: 10px;
-       }
-    
-}
-
-@media(min-width :992px) and (max-width:1199) {
-    /* medium */
-    .container {
-        max-width: 960px;
-    }
-    .con {
-        flex-direction: column;
-       }
-       .con__img {
-         padding-top: 20px;
-         padding-left: 50px;
-         width: 450px;
-       }
-       .con__par {
-         flex-basis: 6em;
-         padding-left: 10px;
-         padding-right: 10px;
-       }
-    
-}
-
-@media(min-width :1200px) {
-    /* large*/
-    .container {
-        max-width: 1140px;
-    }
-}
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>bayan<<<<<<<<<<<<<<<<<<<<<<<<<<<<,*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -218,11 +10,48 @@ p{
     box-sizing: border-box;
 }
 
-.visibile-xs,
-.visibile-sm,
-.visibile-md,
-.visibile-lg {
-    display: none;
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font: 700 48px/56px "Raleway", sans-serif;
+    color: #626262;
+}
+
+section {
+    padding: 60px 0 100px 0;
+}
+
+.p-large {
+    font: 400 16px/24px "Raleway", sans-serif;
+}
+
+.bnt-lg {
+    display: inline-block;
+    padding: 22px 42px;
+    border-radius: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn-blue {
+    background-color: #00bfd8;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.mainDiv {
+    padding: 87px 0 0 0;
 }
 
 a {
@@ -268,6 +97,19 @@ a {
     align-items: center;
 }
 
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 .row {
     position: relative;
     display: -ms-flexbox;
@@ -281,6 +123,7 @@ a {
     padding: 6px 3px;
     flex-grow: 1;
 }
+/*======================== Genral ============================================*/
 
 
 /*============================ navgition ======================================*/
@@ -288,11 +131,6 @@ a {
 .navgition {
     width: 100%;
     padding: 10px 0;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
     position: fixed;
     background-color: #fff;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
@@ -305,70 +143,54 @@ a {
     transition: all 0.3s ease-out 0s;
 }
 
-.navgition__logo {
-    min-width: 60px;
-    max-width: 120px;
-    width: 10%;
-}
-
-.navgition__nav {
-    min-width: 250px;
-    max-width: 550px;
-    width: 65%;
-}
 
 .navgition__nav ul li {
     margin: 0 10px;
 }
 
-.navgition__nav ul li a {
-    font-size: 18px;
-    line-height: 35px;
-    font-weight: 700;
-    padding: 26px 0;
-    color: #121212;
-    text-transform: uppercase;
-    position: relative;
-    transition: all 0.3s ease-out 0s;
-}
+    .navgition__nav ul li a {
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 700;
+        padding: 26px 0;
+        color: #121212;
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.3s ease-out 0s;
+    }
 
-.navgition__nav ul li>a::before {
-    position: absolute;
-    content: ' ';
-    width: 8px;
-    height: 4px;
-    background-color: #0067f4;
-    left: 50%;
-    margin: 0 2px;
-    bottom: 14px;
-    transition: all 0.3s ease-out 0s;
-    opacity: 0;
-}
+    .navgition__nav ul li > a::before {
+        position: absolute;
+        content: ' ';
+        width: 8px;
+        height: 4px;
+        background-color: #0067f4;
+        left: 50%;
+        margin: 0 2px;
+        bottom: 14px;
+        transition: all 0.3s ease-out 0s;
+        opacity: 0;
+    }
 
-.navgition__nav ul li>a::after {
-    position: absolute;
-    content: ' ';
-    width: 8px;
-    height: 4px;
-    background-color: #0067f4;
-    left: auto;
-    right: 50%;
-    margin: 0 2px;
-    bottom: 14px;
-    transition: all 0.3s ease-out 0s;
-    opacity: 0;
-}
+    .navgition__nav ul li > a::after {
+        position: absolute;
+        content: ' ';
+        width: 8px;
+        height: 4px;
+        background-color: #0067f4;
+        left: auto;
+        right: 50%;
+        margin: 0 2px;
+        bottom: 14px;
+        transition: all 0.3s ease-out 0s;
+        opacity: 0;
+    }
 
-.navgition__nav ul li:hover>a::before,
-.navgition__nav ul li:hover>a::after {
-    opacity: 1;
-}
+    .navgition__nav ul li:hover > a::before,
+    .navgition__nav ul li:hover > a::after {
+        opacity: 1;
+    }
 
-.navgition__followUs {
-    min-width: 120px;
-    max-width: 320px;
-    width: 30%;
-}
 
 .navgition__followUs span {
     font-size: 16px;
@@ -378,7 +200,7 @@ a {
     margin: 0 15px 0 0;
 }
 
-.navgition__followUs ul li>a {
+.navgition__followUs ul li > a {
     font-size: 32px;
     color: #6c6c6c;
     margin: 0 5px 0 0;
@@ -393,15 +215,177 @@ a {
     list-style: none;
 }
 
-.navgition ul li {
-    display: inline-block;
+    .navgition ul li {
+        display: inline-block;
+    }
+/*=============== custom Meadi Query of heaber =======================================================*/
+@media(min-width: 576px) {
+    /* and (max-width:992)*/
+    .navgition__followUs {
+        display: none !important;
+    }
+}
+/*=============== custom Meadi Query of heaber =======================================================*/
+
+/*============================================ Navigation  =============================================*/
+
+
+
+/*============================================ home  =============================================*/
+
+.home {
+    background: url(image/header-background.jpg) center center no-repeat;
+    background-size: cover;
 }
 
+.TeamDescrition__Title {
+    color: #00bfd8;
+}
 
-/*================================================ roba ==================================*/
+.TeamDescrition__Descr {
+    font-size: 32px;
+}
+
+.home .p-large {
+    margin-bottom: 24px;
+    color: #626262;
+}
+/*============================================ home  =============================================*/
+
+
+
+
+/*============================= about us , Bayan ===================*/
+
+.con {
+    margin: 30px 30px 30px;
+    padding: 20px 20px 20px;
+    border: #00bfd8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.con__h1 {
+    font-size: 50px;
+    color: #00bfd8;
+    font-family: monospace;
+    font-weight: 400;
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.con__par {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: 450px;
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-basis: 10em;
+    text-align: justify;
+    color: gray;
+}
+
+.con__img {
+    height: 550px;
+    width: 200px;
+    box-sizing: border-box;
+    flex-basis: 31em;
+}
+
+/*============================= about us , Bayan ===================*/
+
+
+
+/*===================Contact , Hnan ====================*/
+
+#contact {
+    background-color: #f7f7f7;
+}
+
+.contact_title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin: 20px;
+    color: #00bfd8;
+}
+
+.contact__Descr {
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.contactUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    width: 520px;
+    margin: 0px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 520px;
+}
+
+    .userInfo > input {
+        width: 255px;
+        height: 40px;
+        border: 1px solid rgb(47, 67, 241);
+        border-radius: 4px;
+        padding: 5px;
+        box-shadow: 2px 2px 2px rgb(170, 177, 243);
+    }
+
+.subject {
+    position: relative;
+    height: 40px;
+    width: 520px;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid rgb(47, 67, 241);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgb(170, 177, 243);
+}
+
+.message {
+    position: relative;
+    height: 200px;
+    width: 520px;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid rgb(47, 67, 241);
+    box-shadow: 2px 2px 2px rgb(170, 177, 243);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/*===================Contact , Hnan =====================================================*/
+
+
+
+
+/*================================================ ruba ==================================*/
 
 h1 {
-    font-size: 30px;
+    /*font-size: 30px;*/
 }
 
 .teamsection {
@@ -409,7 +393,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0 50px 0;
+    /*padding: 20px 0 50px 0;*/
 }
 
 .info {
@@ -421,13 +405,18 @@ h1 {
     line-height: 26.5px;
 }
 
+
+    .info h2 {
+        margin: 0 0 10px 0;
+    }
+
 .firstteammate,
 .secondteammate,
 .thirdteammate,
 .fourthteammate {
     box-shadow: 10px 10px 10px whitesmoke;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: row;
     height: 200px;
     margin: 21px;
@@ -449,7 +438,7 @@ h1 {
     display: flex;
     justify-content: center;
     /* padding: 10px;
-    margin: 10px; */
+margin: 10px; */
     /* height: 280px; */
     /* color: #abacae; */
 }
@@ -483,32 +472,27 @@ a {
 }
 
 .icons {
-    padding-top: 40px;
+    padding: 9px 0 0 0px;
 }
 
-
-/*================================================ roba =======================================*/
-
+/*================================================ ruba ==================================*/
 
 /*============================= media ==============================*/
 
-
-@media(max-width:576px) and (max-width: 768px) { /* Modile */
-    .container {
-        
-        max-width: 540px;
-
-@media(max-width:340px) {
+@media(max-width: 340px) {
     /* Modile */
     .container {
         max-width: 340px;
     }
+
     .members {
         flex-direction: column;
     }
+
     .icons {
         padding-top: 0px;
     }
+
     .teammatepic {
         height: 100px;
         width: 125px;
@@ -516,111 +500,71 @@ a {
         /* padding: 9px; */
         line-height: 5px;
     }
+
     .info {
         line-height: 17.5px;
         padding: 10px;
     }
-    h1{
-        font-size: 20px;
-    }
-    p{
+
+    /*h1 {
+                font-size: 20px;
+            }*/
+
+    p {
         font-size: 15px;
         display: flex;
         flex-wrap: wrap;
     }
-    .inputs{
+
+    .inputs {
         width: 200px;
         height: 300px;
         flex-wrap: wrap;
     }
-    .userInfo{
+
+    .userInfo {
         /* width: 150px; */
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 0;
     }
-    .userInfo > input{
-        margin-bottom: 15px;
-        width: 200px;
-        height: 25px;
-    }
-    .subject{
+
+        .userInfo > input {
+            margin-bottom: 15px;
+            width: 200px;
+            height: 25px;
+        }
+
+    .subject {
         margin-top: 0;
         width: 200px;
         margin-bottom: 15px;
         flex-wrap: wrap;
         height: 25px;
     }
- 
-    .message{
+
+    .message {
         margin-top: 0;
         width: 200px;
         height: 120px;
         flex-wrap: wrap;
     }
 
-    .send{
+    .send {
         height: 30px;
         width: 80px;
         font-size: 8px;
         padding: 1px;
     }
-
 }
 
-@media(max-width:200px) { /* Modile */
+
+@media(min-width:341px) and (max-width:575px) {
+
     .container {
-        
         max-width: 540px;
     }
-    h1{
-        font-size: 15px;
-    }
-    p{
-        font-size: 10px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .inputs{
-        width: 180px;
-        height: 200px;
-        flex-wrap: wrap;
-    }
-    .userInfo{
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-    .userInfo > input{
-        margin-bottom: 10px;
-        width:  180px;
-        height: 20px;
-    }
-    .subject{
-        margin-top: 0;
-        width: 180px;
-        margin-bottom: 10px;
-        flex-wrap: wrap;
-        height: 20px;
-    }
-    .message{
-        margin-top: 0;
-        width: 180px;
-        height: 90px;
-        flex-wrap: wrap;
-    }
 
-    .send{
-        height: 30px;
-        width: 80px;
-        font-size: 8px;
-        padding: 1px;
-    }
-
-}
-
-@media(min-width: 768px) and  (max-width :992px){ /* Small */
-@media (min-width:340px)and (max-width:576px) {
     .teammatepic {
         height: 100px;
         width: 125px;
@@ -632,52 +576,233 @@ a {
     .container {
         max-width: 340px;
     }
+
     .members {
         flex-direction: column;
     }
+
     .icons {
         padding-top: 0px;
     }
+
     .info {
         line-height: 19.5px;
         padding: 15px;
     }
+    .navgition__followUs,
+    .navgition__logo {
+        display: none !important;
+    }
+
+
+    .con {
+        margin: 4px 0px 0px;
+        padding: 15px 0px 0px;
+    }
+
+    .con__par {
+        width: 323px;
+        padding-left: 6px;
+        padding-right: 17px;
+    }
+
+    .con__h1 {
+        padding-left: 30px;
+    }
+
+    .con__img {
+        flex-basis: 20em;
+        padding-top: 40px;
+    }
+
+
+    .inputs {
+        width: 180px;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    .userInfo {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+        .userInfo > input {
+            margin-bottom: 10px;
+            width: 180px;
+            height: 20px;
+        }
+
+    .subject {
+        margin-top: 0;
+        width: 180px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        height: 20px;
+    }
+
+    .message {
+        margin-top: 0;
+        width: 180px;
+        height: 90px;
+        flex-wrap: wrap;
+    }
+
+    .send {
+        height: 30px;
+        width: 80px;
+        font-size: 8px;
+        padding: 1px;
+    }
 }
 
+
+
+@media(min-width: 576px) and (max-width:767) {
+    /* Small */
+    .container {
+        max-width: 540px;
+    }
+
+    .navgition__followUs {
+        display: none !important;
+    }
+}
+
+
+
+@media(min-width: 768px) and (max-width:991) {
+    /* Small */
+    .container {
+        max-width: 720px;
+    }
+
+    .navgition__followUs {
+        display: flex !important;
+    }
+
+
+    .con {
+        flex-direction: column;
+    }
+
+    .con__img {
+        padding-top: 20px;
+        padding-left: 50px;
+        width: 450px;
+    }
+
+    .con__par {
+        flex-basis: 6em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+@media(min-width :992px) and (max-width:1199) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .con {
+        flex-direction: column;
+    }
+
+    .con__img {
+        padding-top: 20px;
+        padding-left: 50px;
+        width: 450px;
+    }
+
+    .con__par {
+        flex-basis: 6em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .members {
+        flex-direction: column;
+    }
+
+    .icons {
+        padding-top: 0px;
+    }
+
+    .teammatepic {
+        height: 100px;
+        width: 125px;
+        margin: 0;
+        /* padding: 9px; */
+        line-height: 5px;
+    }
+
+    .info {
+        line-height: 17.5px;
+        padding: 10px;
+    }
+}
+
+
 @media(min-width: 577px) and (max-width :768px) {
+
+    
     /*Small */
     .container {
         max-width: 540px;
     }
+
     .members {
         flex-direction: column;
     }
+
     .info {
         width: 570px;
     }
+
     .icons {
         padding-top: 0px;
     }
+
+   
 }
+
+
 
 @media(min-width: 769px) and (max-width :992px) {
     /*Small */
     .container {
         max-width: 720px;
     }
+
     .members {
         flex-direction: column;
     }
+
     .info {
         width: 570px;
     }
 }
 
+/*this */
 @media(min-width :993px) and (max-width :1200px) {
     /* medium */
     .container {
         max-width: 960px;
     }
+
+    .navgition__followUs {
+        display: flex !important;
+    }
+    .info {
+        width: 200px;
+    }
+}
+
+@media(min-width :1200px) {
     .info {
         width: 200px;
     }
@@ -688,4 +813,15 @@ a {
     .container {
         max-width: 1140px;
     }
+
+    .navgition__followUs {
+        display: flex !important;
+    }
 }
+
+
+
+
+
+
+
