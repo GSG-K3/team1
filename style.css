@@ -1,5 +1,4 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css);
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,9 @@ html {
 }
 
 h1 {
-    font: 700 48px/56px "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
     color: #626262;
 }
 
@@ -25,7 +26,9 @@ section {
 }
 
 .p-large {
-    font: 400 16px/24px "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .bnt-lg {
@@ -123,6 +126,8 @@ a {
     padding: 6px 3px;
     flex-grow: 1;
 }
+
+
 /*======================== Genral ============================================*/
 
 
@@ -143,54 +148,52 @@ a {
     transition: all 0.3s ease-out 0s;
 }
 
-
 .navgition__nav ul li {
     margin: 0 10px;
 }
 
-    .navgition__nav ul li a {
-        font-size: 18px;
-        line-height: 35px;
-        font-weight: 700;
-        padding: 26px 0;
-        color: #121212;
-        text-transform: uppercase;
-        position: relative;
-        transition: all 0.3s ease-out 0s;
-    }
+.navgition__nav ul li a {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 700;
+    padding: 26px 0;
+    color: #121212;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+}
 
-    .navgition__nav ul li > a::before {
-        position: absolute;
-        content: ' ';
-        width: 8px;
-        height: 4px;
-        background-color: #0067f4;
-        left: 50%;
-        margin: 0 2px;
-        bottom: 14px;
-        transition: all 0.3s ease-out 0s;
-        opacity: 0;
-    }
+.navgition__nav ul li>a::before {
+    position: absolute;
+    content: ' ';
+    width: 8px;
+    height: 4px;
+    background-color: #0067f4;
+    left: 50%;
+    margin: 0 2px;
+    bottom: 14px;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
 
-    .navgition__nav ul li > a::after {
-        position: absolute;
-        content: ' ';
-        width: 8px;
-        height: 4px;
-        background-color: #0067f4;
-        left: auto;
-        right: 50%;
-        margin: 0 2px;
-        bottom: 14px;
-        transition: all 0.3s ease-out 0s;
-        opacity: 0;
-    }
+.navgition__nav ul li>a::after {
+    position: absolute;
+    content: ' ';
+    width: 8px;
+    height: 4px;
+    background-color: #0067f4;
+    left: auto;
+    right: 50%;
+    margin: 0 2px;
+    bottom: 14px;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
 
-    .navgition__nav ul li:hover > a::before,
-    .navgition__nav ul li:hover > a::after {
-        opacity: 1;
-    }
-
+.navgition__nav ul li:hover>a::before,
+.navgition__nav ul li:hover>a::after {
+    opacity: 1;
+}
 
 .navgition__followUs span {
     font-size: 16px;
@@ -200,7 +203,7 @@ a {
     margin: 0 15px 0 0;
 }
 
-.navgition__followUs ul li > a {
+.navgition__followUs ul li>a {
     font-size: 32px;
     color: #6c6c6c;
     margin: 0 5px 0 0;
@@ -215,20 +218,25 @@ a {
     list-style: none;
 }
 
-    .navgition ul li {
-        display: inline-block;
-    }
+.navgition ul li {
+    display: inline-block;
+}
+
+
 /*=============== custom Meadi Query of heaber =======================================================*/
+
 @media(min-width: 576px) {
     /* and (max-width:992)*/
     .navgition__followUs {
         display: none !important;
     }
 }
+
+
 /*=============== custom Meadi Query of heaber =======================================================*/
 
-/*============================================ Navigation  =============================================*/
 
+/*============================================ Navigation  =============================================*/
 
 
 /*============================================ home  =============================================*/
@@ -250,9 +258,9 @@ a {
     margin-bottom: 24px;
     color: #626262;
 }
+
+
 /*============================================ home  =============================================*/
-
-
 
 
 /*============================= about us , Bayan ===================*/
@@ -296,8 +304,8 @@ a {
     flex-basis: 31em;
 }
 
-/*============================= about us , Bayan ===================*/
 
+/*============================= about us , Bayan ===================*/
 
 
 /*===================Contact , Hnan ====================*/
@@ -346,14 +354,14 @@ a {
     width: 520px;
 }
 
-    .userInfo > input {
-        width: 255px;
-        height: 40px;
-        border: 1px solid rgb(47, 67, 241);
-        border-radius: 4px;
-        padding: 5px;
-        box-shadow: 2px 2px 2px rgb(170, 177, 243);
-    }
+.userInfo>input {
+    width: 255px;
+    height: 40px;
+    border: 1px solid rgb(47, 67, 241);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgb(170, 177, 243);
+}
 
 .subject {
     position: relative;
@@ -377,16 +385,11 @@ a {
     padding: 5px;
 }
 
+
 /*===================Contact , Hnan =====================================================*/
 
 
-
-
 /*================================================ ruba ==================================*/
-
-h1 {
-    /*font-size: 30px;*/
-}
 
 .teamsection {
     background-color: #f9f9f9;
@@ -405,10 +408,9 @@ h1 {
     line-height: 26.5px;
 }
 
-
-    .info h2 {
-        margin: 0 0 10px 0;
-    }
+.info h2 {
+    margin: 0 0 10px 0;
+}
 
 .firstteammate,
 .secondteammate,
@@ -475,7 +477,9 @@ a {
     padding: 9px 0 0 0px;
 }
 
+
 /*================================================ ruba ==================================*/
+
 
 /*============================= media ==============================*/
 
@@ -484,15 +488,12 @@ a {
     .container {
         max-width: 340px;
     }
-
     .members {
         flex-direction: column;
     }
-
     .icons {
         padding-top: 0px;
     }
-
     .teammatepic {
         height: 100px;
         width: 125px;
@@ -500,41 +501,31 @@ a {
         /* padding: 9px; */
         line-height: 5px;
     }
-
     .info {
-        line-height: 17.5px;
-        padding: 10px;
+        line-height: 20.5px;
+        padding: 8px;
     }
-
-    /*h1 {
-                font-size: 20px;
-            }*/
-
     p {
         font-size: 15px;
         display: flex;
         flex-wrap: wrap;
     }
-
     .inputs {
         width: 200px;
         height: 300px;
         flex-wrap: wrap;
     }
-
     .userInfo {
         /* width: 150px; */
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 0;
     }
-
-        .userInfo > input {
-            margin-bottom: 15px;
-            width: 200px;
-            height: 25px;
-        }
-
+    .userInfo>input {
+        margin-bottom: 15px;
+        width: 200px;
+        height: 25px;
+    }
     .subject {
         margin-top: 0;
         width: 200px;
@@ -542,14 +533,12 @@ a {
         flex-wrap: wrap;
         height: 25px;
     }
-
     .message {
         margin-top: 0;
         width: 200px;
         height: 120px;
         flex-wrap: wrap;
     }
-
     .send {
         height: 30px;
         width: 80px;
@@ -558,82 +547,69 @@ a {
     }
 }
 
-
 @media(min-width:341px) and (max-width:575px) {
-
     .container {
         max-width: 540px;
     }
-
     .teammatepic {
-        height: 100px;
+        height: 125px;
         width: 125px;
         margin: 0;
         /* padding: 9px; */
         line-height: 5px;
+        margin: 12px 0 0 0;
     }
-    /* Modile */
-    .container {
-        max-width: 340px;
-    }
-
     .members {
         flex-direction: column;
     }
-
     .icons {
         padding-top: 0px;
     }
-
+    .firstteammate,
+    .secondteammate,
+    .thirdteammate,
+    .fourthteammate {
+        height: 150px;
+    }
     .info {
-        line-height: 19.5px;
-        padding: 15px;
+        line-height: 16.5px;
+        padding: 8px;
     }
     .navgition__followUs,
     .navgition__logo {
         display: none !important;
     }
-
-
     .con {
         margin: 4px 0px 0px;
         padding: 15px 0px 0px;
     }
-
     .con__par {
         width: 323px;
         padding-left: 6px;
         padding-right: 17px;
     }
-
     .con__h1 {
         padding-left: 30px;
     }
-
     .con__img {
         flex-basis: 20em;
         padding-top: 40px;
     }
-
-
     .inputs {
         width: 180px;
         height: 200px;
         flex-wrap: wrap;
     }
-
     .userInfo {
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 0;
     }
-
-        .userInfo > input {
-            margin-bottom: 10px;
-            width: 180px;
-            height: 20px;
-        }
-
+    .userInfo>input {
+        margin-bottom: 10px;
+        width: 180px;
+        height: 20px;
+    }
     .subject {
         margin-top: 0;
         width: 180px;
@@ -641,14 +617,12 @@ a {
         flex-wrap: wrap;
         height: 20px;
     }
-
     .message {
         margin-top: 0;
         width: 180px;
         height: 90px;
         flex-wrap: wrap;
     }
-
     .send {
         height: 30px;
         width: 80px;
@@ -657,81 +631,78 @@ a {
     }
 }
 
-
-
-@media(min-width: 576px) and (max-width:767) {
-    /* Small */
+@media(min-width: 576px) and (max-width :768px) {
+    /*Small */
     .container {
         max-width: 540px;
     }
-
+    .members {
+        flex-direction: column;
+    }
+    .info {
+        width: 570px;
+        line-height: 23.5px;
+    }
+    .icons {
+        padding-top: 0px;
+    }
     .navgition__followUs {
         display: none !important;
     }
 }
 
-
-
-@media(min-width: 768px) and (max-width:991) {
+@media(min-width: 769px) and (max-width:991) {
     /* Small */
     .container {
         max-width: 720px;
     }
-
     .navgition__followUs {
         display: flex !important;
     }
-
-
     .con {
         flex-direction: column;
     }
-
     .con__img {
         padding-top: 20px;
         padding-left: 50px;
         width: 450px;
     }
-
     .con__par {
         flex-basis: 6em;
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-
-
-
-@media(min-width :992px) and (max-width:1199) {
-
-    .container {
-        max-width: 960px;
-    }
-
-    .con {
-        flex-direction: column;
-    }
-
-    .con__img {
-        padding-top: 20px;
-        padding-left: 50px;
-        width: 450px;
-    }
-
-    .con__par {
-        flex-basis: 6em;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
     .members {
         flex-direction: column;
     }
+    .info {
+        width: 570px;
+    }
+}
 
+@media(min-width :992px) and (max-width:1199) {
+    .container {
+        max-width: 960px;
+    }
+    .con {
+        flex-direction: column;
+    }
+    .con__img {
+        padding-top: 20px;
+        padding-left: 50px;
+        width: 450px;
+    }
+    .con__par {
+        flex-basis: 6em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .members {
+        flex-direction: column;
+    }
     .icons {
         padding-top: 0px;
     }
-
     .teammatepic {
         height: 100px;
         width: 125px;
@@ -739,61 +710,14 @@ a {
         /* padding: 9px; */
         line-height: 5px;
     }
-
-    .info {
+    /* .info {
         line-height: 17.5px;
         padding: 10px;
-    }
-}
-
-
-@media(min-width: 577px) and (max-width :768px) {
-
-    
-    /*Small */
-    .container {
-        max-width: 540px;
-    }
-
-    .members {
-        flex-direction: column;
-    }
-
+    } */
     .info {
-        width: 570px;
+        padding: 10px;
+        line-height: 20.5px;
     }
-
-    .icons {
-        padding-top: 0px;
-    }
-
-   
-}
-
-
-
-@media(min-width: 769px) and (max-width :992px) {
-    /*Small */
-    .container {
-        max-width: 720px;
-    }
-
-    .members {
-        flex-direction: column;
-    }
-
-    .info {
-        width: 570px;
-    }
-}
-
-/*this */
-@media(min-width :993px) and (max-width :1200px) {
-    /* medium */
-    .container {
-        max-width: 960px;
-    }
-
     .navgition__followUs {
         display: flex !important;
     }
@@ -803,25 +727,11 @@ a {
 }
 
 @media(min-width :1200px) {
-    .info {
-        width: 200px;
-    }
-}
-
-@media(min-width :1201px) {
     /* large*/
     .container {
         max-width: 1140px;
     }
-
     .navgition__followUs {
         display: flex !important;
     }
 }
-
-
-
-
-
-
-
