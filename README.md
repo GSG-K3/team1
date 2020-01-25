@@ -1,5 +1,7 @@
 Purpose of the site:
 
+page link: https://gsg-k3.github.io/team1/
+
 The website is desineged to be as a guide for clients who looking for programming team , so that he/she can easily find all information about them in one site such that their names, skills, experiences,...etc. In addition to that they can contact directly with the team using the site too.
 
 Description about the site:
