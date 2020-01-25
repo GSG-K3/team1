@@ -133,6 +133,14 @@ a {
 
 /*============================ navgition ======================================*/
 
+.navgition ul {
+    list-style: none;
+}
+
+.navgition ul li {
+    display: inline-block;
+}
+
 .navgition {
     width: 100%;
     padding: 10px 0;
@@ -212,14 +220,6 @@ a {
     -o-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-}
-
-.navgition ul {
-    list-style: none;
-}
-
-.navgition ul li {
-    display: inline-block;
 }
 
 
@@ -488,6 +488,9 @@ a {
     .container {
         max-width: 340px;
     }
+    .home {
+        background: none;
+    }
     .members {
         flex-direction: column;
     }
@@ -545,11 +548,24 @@ a {
         font-size: 8px;
         padding: 1px;
     }
+    .navgition__followUs,
+    .navgition__logo {
+        display: none !important;
+    }
+    .navgition ul li {
+        display: block;
+    }
+    .mainDiv {
+        padding: 110px 0 0 0;
+    }
 }
 
 @media(min-width:341px) and (max-width:575px) {
     .container {
         max-width: 540px;
+    }
+    .home {
+        background: none;
     }
     .teammatepic {
         height: 125px;
@@ -646,7 +662,8 @@ a {
     .icons {
         padding-top: 0px;
     }
-    .navgition__followUs {
+    .navgition__followUs,
+    .navgition__logo {
         display: none !important;
     }
 }
